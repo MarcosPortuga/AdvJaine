@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, Cambria, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+  --color-wine-950: #0d0305;
+  --color-wine-900: #140508;
+  --color-wine-850: #1c080d;
+  --color-wine-800: #260b12;
+  --color-wine-700: #360f1a;
+  --color-wine-600: #4a1523;
+
+  --color-gold-300: #eedcaf;
+  --color-gold-400: #e0ca92;
+  --color-gold-500: #c5a869;
+  --color-gold-600: #ab8d4d;
+  --color-gold-700: #886d34;
+
+  --color-cream-100: #fbf9f5;
+  --color-cream-200: #f4efe6;
+  --color-cream-300: #ede7dc;
+  --color-cream-400: #d6ccba;
+  --color-cream-500: #a89d89;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: #120507;
+    color: #ede7dc;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Subtle luxury gold text gradient */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #f3e5c2 0%, #c5a869 50%, #9a7e3e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gold-bright {
+  background: linear-gradient(135deg, #fff2d1 0%, #dfc588 50%, #c5a869 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Thin hairline border in antique gold */
+.border-gold-subtle {
+  border-color: rgba(197, 168, 105, 0.22);
+}
+
+.border-gold-glow {
+  border-color: rgba(197, 168, 105, 0.45);
+  box-shadow: 0 0 25px -5px rgba(197, 168, 105, 0.15);
+}
+
+/* Luxury card surface */
+.bg-wine-glass {
+  background: linear-gradient(145deg, rgba(38, 11, 18, 0.7) 0%, rgba(20, 5, 8, 0.85) 100%);
+  backdrop-filter: blur(12px);
+}
